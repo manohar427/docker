@@ -1,0 +1,22 @@
+1.Install Docker :
+Docker Desktop for winows >8
+Docker Desktop for ToolBox <10
+
+2.Enable virtualization
+
+Usefull commands :
+>docker-machine ip
+  Gives IP and can able to access Apps
+
+3.docker build -f Dockerfile -t spring-boot:1.0 .
+
+4.docker run -p 1111:8080 IMG-ID
+
+5.docker ps
+  docker rm PSID
+  docker kill <PS-ID>
+
+6.docker images
+  docker image rm -f <ImageID> 
+7.Logs:
+  docker container logs PS-ID -f 
