@@ -20,3 +20,8 @@ Usefull commands :
   docker image rm -f <ImageID> 
 7.Logs:
   docker container logs PS-ID -f 
+  
+  -----node js 
+  
+  >$ docker build -t docker-node . 
+  >$ docker run -p 3000:3000 node-test 
