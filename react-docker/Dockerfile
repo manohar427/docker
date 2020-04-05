@@ -1,12 +1,15 @@
 FROM node:10
 
-RUN mkdir /usr/src/app
+RUN mkdir -p /src/apps
 
-COPY . /usr/src/app
+WORKDIR /src/apps
 
-WORKDIR /usr/src/app
+COPY . /src/apps/
 
-ENV PATH /usr/src/app/node_modules/.bin:$PATH
-RUN yarn
-EXPOSE 8080
+RUN yarn install
+
+
+
+EXPOSE 3000
+
 CMD [ "npm", "start" ]
