@@ -12,6 +12,7 @@ Usefull commands :
 
 4.docker run -p 1111:8080 IMG-ID
 
+
 5.docker ps
   docker rm PSID
   docker kill <PS-ID>
@@ -25,3 +26,18 @@ Usefull commands :
   
   >$ docker build -t docker-node . 
   >$ docker run -p 3000:3000 node-test 
+
+
+
+--Docker hub 
+->commit image 
+
+Issues
+$ docker-machine restart default      # Restart the environment
+$ eval $(docker-machine env default)  # Refresh your environment settings
+
+$ docker commit 8f13db968d14 manohar427/dddd
+sha256:7757b1166e3a228cb244e2e64f26a8b6fdf1958ddb56fc58c29161df03b85850
+
+$ docker push manohar427/dddd
+The push refers to repository [docker.io/manohar427/dddd]
